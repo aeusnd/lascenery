@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Point Fermin Park</title>
+	<link href="pages-styles.css" rel="stylesheet" media="all">
+     
+    <link rel="stylesheet"  href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/gallery.prefixed.min.css">
+   	<link rel="stylesheet" href="css/gallery.theme.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,400italic' rel='stylesheet' type='text/css'>
+	<style>
+		.section-wrapper {
+			margin-top: 0px;
+			padding-top: 0px;
+		}
+
+		.section-wrapper:first-child .section {
+			padding-top: 100px;
+		}
+
+</style>
+		
+		
+
+    
+    	
+</head>
+
+<body>
+<!--HEADER-->
+
+<header>
+  <div id="nav"><h1 class="logo"></h1></div>
+ <!--<h1><a href="/" data-bypass="true" class="current">aeusnd</a></h1>-->
+
+	<ul id="nav">
+		<li class="current"><a class="home" href="index.html#section-1">home</a></li>
+	</ul>
+</header>
+
+
+
+<!--HEADER END-->
+<!--MAIN-->
+
+	<div id="container-top">
+		<div class="section-wrapper" id="section-1">
+			<div class="sectionfermin">
+            
+             <!-- TEXT BLOCK -->
+                       <div class="full-block">
+                            <div class="full-block-cell">
+                                <div class="full-block-content">
+                                    <div class="look-branding">
+                                       
+                                    </div>
+                                    <h1>Point Fermin</h1>
+                    <h2>This scenic park is the southernmost point in Los Angeles.</h2>
+                                    <h3>by Seth </h3>
+                                    <!-- <h4>Nov 7, 2014</h4> -->
+                                   
+                                </div>
+                            </div>
+   					 </div>
+              <!-- TEXT BLOCK END -->
+       
+
+			</div> 
+		</div>
+        </div>
+ <!--MAIN END-->
+ 
+
+<!-- MID CONTAINER -->  
+
+        <div class="section-wrapper" id="section-3">
+			 <div class="section3" > 
+<!-- HEADLINE -->
+          <div class="headline">
+          <p><span class="firstcharacter">P</span>oint Fermin Park consists of 37 landscaped acres of tree-shaded lawns, sheltered pergolas, colorful gardens and a promenade along the edge of the palisade. The vantage point atop the rugged bluffs affords a breathtaking view of the coast toward Santa Catalina Island. You may even be able to spot playful dolphin and harbor seals from the cliffs. There are picnic areas, a playground and a small amphitheater. Two trails west of the area lead to the beach and tide pools below.</p>
+          <p>This scenic park is the southernmost point in Los Angeles. The area was given it's name by the British explorer George Vancouver, who visited here in 1793 and decided to thank Father Fermin Francisco de Lasuen for his hospitality at the mission in Carmel. Point Fermin Park is one of the few places on the peninsula where Monarch butterflies spend their winters. This lovely park provides spectacular views of the coast and Channel Islands and is a perfect site for picnics or a leisurely stroll. To the left of the park entrance is colorful Walker's Cafe which is frequently used as a movie location. Among the tall palms you will spot the Point Fermin Lighthouse.</p>
+          <p><strong>Lighthouse History</strong></p>
+
+<p>Built in 1874, the Point Fermin Lighthouse was the first navigational light into the San Pedro Bay. Phineas Banning, with the support of many local businessmen, petitioned the Federal Government and the US lighthouse Board to place a lighthouse on the point in 1854. Although the Lighthouse Board agreed funding and land disputes delayed its construction until 1874.</p>
+     
+        </div>
+<!-- HEADLINE -->
+      </div>
+
+</div>    
+<!-- MID CONTAINER END--> 
+
+<!-- BOTTOM CONTAINER -->   
+<div id="container-bottom"> 
+     
+
+          		<div class="section-wrapper" id="section-4">
+                <!-- HEADLINE -->
+          <div class="headline">
+          <h1>Point Fermin Park Map</h1>
+          <p>How to get to Point Fermin Park.</p>
+        </div>
+<!-- HEADLINE -->
+          			<div class="section4" id="map_canvas"></div>
+
+
+              </div>
+
+      
+</div>
+
+
+    <!-- BOTTOM CONTAINER END -->   
+<!--FOOOTER CONTAINER -->
+
+    <div id="container-footer"> 
+  <!--FOOOTER -->
+        <footer role="main">
+    
+        
+        
+          <div class="wrapper">
+                          <nav class="top-legals">
+                            <div class="links">
+                                                    <a class="insta" href="/#"></a>
+                                                    <a class="tumblr" href="/#"></a>
+                                                    <a class="wp" href="/#"></a>
+                                                    <a class="fb" href="/#"></a>
+                                            </div>
+                
+                        </nav>
+                        <nav class="legals">
+                            <div class="copyright">
+                                © 2014 LA Scenery – All Rights Reserved.		</div>
+                            <div class="links">
+                                                    <p>Los Angeles</p>
+                                                    
+                                            </div>
+                
+                        </nav>
+	</div>
+ 
+          
+    </footer>
+
+    <!--FOOOTER -->
+		</div>
+	</div>
+
+  <!--FOOOTER CONTAINER END-->
+	 
+	<!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
+	<!--[if gt IE 8]><!--><script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><!--<![endif]-->
+   						 
+	<script src="jquery.nav.js"></script>
+    
+	<script>
+		$(document).ready(function() {
+			$('#nav').onePageNav();
+		});
+	</script>
+   <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+    function initialize() {
+	var map_canvas = document.getElementById('map_canvas');
+		
+	var map_options = {
+	  center: new google.maps.LatLng(33.706640, -118.294642),
+	  zoom: 10,
+	  mapTypeId: google.maps.MapTypeId.ROADMAP,
+    scrollwheel: false,
+	  mapTypeControl: false,
+	  panControl: false,
+	  streetViewControl: false,
+	  zoomControlOptions: {style:google.maps.ZoomControlStyle.SMALL},
+	  backgroundColor: '#3c3c3c',
+	  styles: 
+[
+  {
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "landscape",
+    "stylers": [
+      { "visibility": "on" },
+      { "color": "#222222" }
+    ]
+  },{
+    "featureType": "water",
+    "stylers": [
+      { "visibility": "on" },
+      { "saturation": -100 },
+      { "lightness": -74 }
+    ]
+  },{
+    "featureType": "road",
+    "stylers": [
+      { "visibility": "on" },
+      { "saturation": -100 },
+      { "weight": 2 },
+      { "lightness": -88 }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "visibility": "on" },
+      { "saturation": -100 },
+      { "lightness": 33 }
+    ]
+  },{
+  }
+]
+	}
+	var map = new google.maps.Map(map_canvas, map_options);
+	
+
+
+// GRIFFITH PARK
+
+var l2 = new google.maps.LatLng(33.706640, -118.294642);
+var l2icon = new google.maps.Marker({ position: l2, map: map, icon: 'imgs/icon.png' });
+
+
+
+  }
+    
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script type="text/javascript">
+
+var vid = document.getElementById("bgvid");
+var pauseButton = document.querySelector("#polina button");
+
+function vidFade() {
+  vid.classList.add("stopfade");
+}
+
+vid.addEventListener('ended', function()
+{
+// only functional if "loop" is removed 
+vid.pause();
+// to capture IE10
+vidFade();
+}); 
+
+
+pauseButton.addEventListener("click", function() {
+  vid.classList.toggle("stopfade");
+  if (vid.paused) {
+    vid.play();
+    pauseButton.innerHTML = "Pause";
+  } else {
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+})
+
+
+
+</script>
+
+
+    
+    
+</body>
+</html>

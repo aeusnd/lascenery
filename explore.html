@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Explore L.A.</title>
+	<link href="pages-styles.css" rel="stylesheet" media="all">
+     
+    <link rel="stylesheet"  href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/gallery.prefixed.min.css">
+   	<link rel="stylesheet" href="css/gallery.theme.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,400italic' rel='stylesheet' type='text/css'>
+	<style>
+		.section-wrapper {
+			margin-top: 0px;
+			padding-top: 0px;
+		}
+
+		.section-wrapper:first-child .section {
+			padding-top: 100px;
+		}
+
+</style>
+		
+		
+
+    
+    	
+</head>
+
+<body>
+<!--HEADER-->
+
+<header>
+  <div id="nav"><h1 class="logo"></h1></div>
+ <!--<h1><a href="/" data-bypass="true" class="current">aeusnd</a></h1>-->
+
+	<ul id="nav">
+		<li class="current"><a class="home" href="index.html#section-1">home</a></li>
+	</ul>
+</header>
+
+
+
+<!--HEADER END-->
+<!--MAIN-->
+
+	<div id="container-top">
+		<div class="section-wrapper" id="section-1">
+			<div class="sectionexplore">
+            
+             <!-- TEXT BLOCK -->
+                       <div class="full-block">
+                            <div class="full-block-cell">
+                                <div class="full-block-content">
+                                    <div class="look-branding">
+                                       
+                                    </div>
+                                    <h1>Go Exploring</h1>
+                    <h2>L.A. is the ideal place to get outside.</h2>
+                                    <h3>by Seth </h3>
+                                    <!-- <h4>Nov 7, 2014</h4> -->
+                                   
+                                </div>
+                            </div>
+   					 </div>
+              <!-- TEXT BLOCK END -->
+       
+
+			</div> 
+		</div>
+        </div>
+ <!--MAIN END-->
+ 
+
+<!-- MID CONTAINER -->  
+
+        <div class="section-wrapper" id="section-3">
+			 <div class="section3" > 
+<!-- HEADLINE -->
+          <div class="headline">
+          <p><span class="firstcharacter">LA</span> is a destination unlike any other: it’s the entertainment capital of the world, offering 75 miles of sunny coastline, a flourishing Downtown, lifestyle playgrounds for the rich and famous, acclaimed restaurants, trend-setting art and fashion scenes, and internationally flavored neighborhoods. With so much to see and do, it can be overwhelming. Fortunately, Los Angeles provides numerous ways to explore the city, whether it’s driving on iconic streets and scenic drives, riding the Metro Rail, or pedaling along hundreds of miles of bike paths. The best way to begin exploring LA is to learn about its vibrant regions — each one a destination in itself, filled with memorable experiences and unique attractions. For those with disabilities, LA offers convenient access to transportation and attractions.</p>
+         <p><strong>Founding</strong></p>
+         
+          <p>Since its founding, Los Angeles has grown into a dynamic global metropolis with an extraordinary cultural heritage. From San Pedro to the San Fernando Valley, LA is home to 211 sites that are on the National Register of Historic Places. As the entertainment capital of the world and home to more creative residents than any other city, LA has a long history with film, TV, music and literature. From world class cultural attractions and landmark buildings to classic dishes, ethnic cuisine and cocktails, LA’s legacy continues to grow. Browse LA Tourism an in-depth look at LA’s fascinating history.</p>
+          <p><strong>LA Tourism </strong></p>
+
+<p>LA Tourism is the best resource to explore Los Angeles. One of the most popular ways to experience LA is by enjoying free activities, from taking a scenic drive to visiting top cultural attractions. Los Angeles remains ahead of the curve when it comes to green travel, from public transit to eco-friendly hotels. LA Tourism celebrates diversity with its LGBT and ethnic guides. Whether it’s luxury or budget, family friendly or singles, LA Tourism has the best itineraries and guides in Los Angeles.</p>
+     
+        </div>
+<!-- HEADLINE -->
+      </div>
+
+</div>    
+<!-- MID CONTAINER END--> 
+
+<!-- BOTTOM CONTAINER -->   
+<div id="container-bottom"> 
+     
+
+          		<div class="section-wrapper" id="section-4">
+                <!-- HEADLINE -->
+          <div class="headline">
+          <h1>Explore L.A. Map</h1>
+          <p>L.A. is the ideal place to get outside.</p>
+        </div>
+<!-- HEADLINE -->
+          			<div class="section4" id="map_canvas"></div>
+
+
+              </div>
+
+      
+</div>
+
+
+    <!-- BOTTOM CONTAINER END -->   
+<!--FOOOTER CONTAINER -->
+
+    <div id="container-footer"> 
+  <!--FOOOTER -->
+        <footer role="main">
+    
+        
+        
+          <div class="wrapper">
+                          <nav class="top-legals">
+                            <div class="links">
+                                                    <a class="insta" href="/#"></a>
+                                                    <a class="tumblr" href="/#"></a>
+                                                    <a class="wp" href="/#"></a>
+                                                    <a class="fb" href="/#"></a>
+                                            </div>
+                
+                        </nav>
+                        <nav class="legals">
+                            <div class="copyright">
+                                © 2014 LA Scenery – All Rights Reserved.		</div>
+                            <div class="links">
+                                                    <p>Los Angeles</p>
+                                                    
+                                            </div>
+                
+                        </nav>
+	</div>
+ 
+          
+    </footer>
+
+    <!--FOOOTER -->
+		</div>
+	</div>
+
+  <!--FOOOTER CONTAINER END-->
+	 
+	<!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
+	<!--[if gt IE 8]><!--><script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><!--<![endif]-->
+   						 
+	<script src="jquery.nav.js"></script>
+    
+	<script>
+		$(document).ready(function() {
+			$('#nav').onePageNav();
+		});
+	</script>
+   <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+    function initialize() {
+	var map_canvas = document.getElementById('map_canvas');
+		
+	var map_options = {
+	  center: new google.maps.LatLng(34.040438, -118.246821),
+	  zoom: 10,
+	  mapTypeId: google.maps.MapTypeId.ROADMAP,
+    scrollwheel: false,
+	  mapTypeControl: false,
+	  panControl: false,
+	  streetViewControl: false,
+	  zoomControlOptions: {style:google.maps.ZoomControlStyle.SMALL},
+	  backgroundColor: '#3c3c3c',
+	  styles: 
+[
+  {
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "landscape",
+    "stylers": [
+      { "visibility": "on" },
+      { "color": "#222222" }
+    ]
+  },{
+    "featureType": "water",
+    "stylers": [
+      { "visibility": "on" },
+      { "saturation": -100 },
+      { "lightness": -74 }
+    ]
+  },{
+    "featureType": "road",
+    "stylers": [
+      { "visibility": "on" },
+      { "saturation": -100 },
+      { "weight": 2 },
+      { "lightness": -88 }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "elementType": "labels.text.fill",
+    "stylers": [
+      { "visibility": "on" },
+      { "saturation": -100 },
+      { "lightness": 33 }
+    ]
+  },{
+  }
+]
+	}
+	var map = new google.maps.Map(map_canvas, map_options);
+	
+
+
+// GRIFFITH PARK
+
+var l2 = new google.maps.LatLng(34.040438, -118.246821);
+var l2icon = new google.maps.Marker({ position: l2, map: map, icon: 'imgs/icon.png' });
+
+
+
+  }
+    
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script type="text/javascript">
+
+var vid = document.getElementById("bgvid");
+var pauseButton = document.querySelector("#polina button");
+
+function vidFade() {
+  vid.classList.add("stopfade");
+}
+
+vid.addEventListener('ended', function()
+{
+// only functional if "loop" is removed 
+vid.pause();
+// to capture IE10
+vidFade();
+}); 
+
+
+pauseButton.addEventListener("click", function() {
+  vid.classList.toggle("stopfade");
+  if (vid.paused) {
+    vid.play();
+    pauseButton.innerHTML = "Pause";
+  } else {
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+})
+
+
+
+</script>
+
+
+    
+    
+</body>
+</html>
